@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    border-color: rgba(123, 97, 255, 0.15);
+  }
+
+  body {
+    background-color: #0A0A14;
+    color: #F0EFF4;
+    font-family: 'Sora', sans-serif;
+  }
+
+  ::selection {
+    background-color: #7B61FF;
+    color: #FFFFFF;
+  }
+}
+
+/* Custom Micro-Interactions */
+.magnetic-btn {
+  transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94), box-shadow 0.3s ease;
+}
+.magnetic-btn:hover {
+  transform: scale(1.03);
+}
+
+.hover-lift {
+  transition: transform 0.25s cubic-bezier(0.25, 0.46, 0.45, 0.94), color 0.25s ease;
+}
+.hover-lift:hover {
+  transform: translateY(-2px);
+}
+
+.experience-card-hover {
+  transition: transform 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94), box-shadow 0.35s ease, border-color 0.35s ease;
+}
+.experience-card-hover:hover {
+  transform: scale(1.015);
+  box-shadow: 0 25px 50px -12px rgba(123, 97, 255, 0.25);
+  border-color: rgba(123, 97, 255, 0.45);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0A0A14;
+}
+::-webkit-scrollbar-thumb {
+  background: #252438;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #7B61FF;
+}
