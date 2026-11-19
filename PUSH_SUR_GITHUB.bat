@@ -8,17 +8,17 @@ echo   ENVOI DU CODE VERS GITHUB : nambiemayassirou6-ai/CV-IZI-SaaS-pro
 echo ===============================================================
 echo.
 
-echo Vérification de l'authentification GitHub...
+echo Verification de l'authentification GitHub...
 gh auth status > nul 2>&1
 if %ERRORLEVEL% NEQ 0 (
     echo.
-    echo [!] Vous n'êtes pas encore connecté à GitHub dans le terminal.
+    echo [!] Connexion a votre compte GitHub...
     echo.
-    echo Connexion rapide via navigateur en cours...
-    echo Un code va s'afficher et votre navigateur va s'ouvrir.
-    echo Validez simplement l'autorisation sur GitHub.
+    echo 1. Un code a 8 caracteres va s'afficher ci-dessous.
+    echo 2. Votre navigateur va s'ouvrir automatiquement sur GitHub.
+    echo 3. Collez le code affiche et cliquez sur "Authorize".
     echo.
-    gh auth login --web -h github.com
+    gh auth login --git-protocol https --web --skip-ssh-key -h github.com
     gh auth setup-git
 )
 
