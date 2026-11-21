@@ -1,10 +1,10 @@
 @echo off
 chcp 65001 > nul
-title PUSH DU CV SUR GITHUB — CV-IZI-SaaS-pro
+title PUSH DU CV SUR GITHUB — CV-IZISaaS-pro
 set "PATH=C:\Users\SILENCEWOLF\.mingit\cmd;%PATH%"
 
 echo ===============================================================
-echo   ENVOI DU CODE VERS GITHUB : nambiemayassirou6-ai/CV-IZI-SaaS-pro
+echo   ENVOI DU CODE VERS GITHUB : nambiemayassirou6-ai/CV-IZISaaS-pro
 echo ===============================================================
 echo.
 
@@ -33,7 +33,7 @@ if %ERRORLEVEL% EQU 0 (
     echo.
     echo ===============================================================
     echo   [SUCCES] Votre code est en ligne sur GitHub !
-    echo   Depot : https://github.com/nambiemayassirou6-ai/CV-IZI-SaaS-pro
+    echo   Depot : https://github.com/nambiemayassirou6-ai/CV-IZISaaS-pro
     echo ===============================================================
 ) else (
     echo.
