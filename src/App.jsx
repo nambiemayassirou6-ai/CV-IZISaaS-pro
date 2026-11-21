@@ -467,8 +467,8 @@ Au plaisir d'échanger avec vous !`;
 
           {/* Status Badge */}
           <div className="hero-badge inline-flex items-center gap-2 px-3.5 sm:px-4 py-1.5 rounded-full bg-[#161626] border border-[#7B61FF]/30 text-[11px] sm:text-xs font-mono text-[#A78BFA] mb-6 sm:mb-8 shadow-sm">
-            <span className="w-2 h-2 rounded-full bg-[#00F5D4] animate-pulse" />
-            <span>DISPONIBLE POUR PROJETS & MISSIONS</span>
+            <Briefcase className="w-3.5 h-3.5 text-[#00F5D4]" />
+            <span>DISPONIBLE POUR VOS PROJETS & OPPORTUNITÉ</span>
           </div>
 
           {/* Profile Avatar / Photo Placeholder */}
